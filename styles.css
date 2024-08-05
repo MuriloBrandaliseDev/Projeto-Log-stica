@@ -14,46 +14,56 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; /* Certifica-se que o cabeçalho fique acima do carousel */
+    z-index: 1000;
+    /* Certifica-se que o cabeçalho fique acima do carousel */
 
-
+}
     .container {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 100px;
-        background-color: rgb(0, 0, 83);
-    }
-
-
+        background: url('path-to-texture.png'), linear-gradient(45deg, rgb(0, 36, 94), #4a90e2);
 
 
 
 }
 
 .texts {
-    color: white;
+    color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 150px;
-    margin-right: 180px;
-    margin-top: 30px;
+    gap: 160px;
+    margin-right: 150px;
+    margin-top: 40px;
 
 
     .paragrafo {
         font-size: 18px;
-        
+        border-radius: 10px;
+    border: 2px solid #0d1d82;
+    box-shadow: 0 0 10px #15006a, 0 0 20px #141a87;
+        width: 130px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+        font-weight: bold;
+
     }
 
 }
 
 .hero {
-    background-image: url('Imagens/FundoDoCabeçalho.jpg'); /* Coloque o caminho para sua imagem aqui */
+    background-image: url('Imagens/FundoDoCabeçalho.jpg');
+    /* Coloque o caminho para sua imagem aqui */
     background-size: cover;
     background-position: center;
-    height: 650px; /* Altura da tela inteira */
-    margin-top: 100px; /* Espaço para o cabeçalho fixo */
+    height: 650px;
+    /* Altura da tela inteira */
+    margin-top: 100px;
+    /* Espaço para o cabeçalho fixo */
     position: relative;
     z-index: 1;
 }
@@ -63,8 +73,9 @@ header {
     width: 120px;
     margin-top: 30px;
 
-
 }
+
+
 
 h1 {
     text-align: center;
@@ -94,7 +105,7 @@ h1 {
     flex: 1;
     font-size: 18px;
     font-weight: bold;
-    text-align:end ;
+    text-align: end;
     line-height: 1.6;
     color: #002060;
     margin-right: 0px;
@@ -105,13 +116,16 @@ h1 {
 .imagem-container {
     position: relative;
     z-index: 3;
-    margin-left: -120px; /* Ajuste o valor conforme necessário */
+    margin-left: -120px;
+    /* Ajuste o valor conforme necessário */
 }
 
 .imagem-container img {
     height: 400px;
-    transform: translateX(100px) translateY(-0px); /* Ajuste a posição do caminhão */
-    margin-right: 350px;
+    transform: translateX(100px) translateY(-0px);
+    /* Ajuste a posição do caminhão */
+    margin-right: 300px;
+    
 }
 
 
@@ -133,7 +147,7 @@ h1 {
     justify-content: space-between;
     padding: 40px;
     position: relative;
-    
+
 }
 
 
@@ -150,13 +164,36 @@ h1 {
 .imagem-mapa {
     position: relative;
     z-index: 3;
-    margin-left: -81px; /* Ajuste o valor conforme necessário */
+    margin-left: -81px;
+    /* Ajuste o valor conforme necessário */
 }
 
 .imagem-mapa img {
     margin-top: -20px;
     height: 600px;
-    transform: translateX(-100px) translateY(-20px); /* Ajuste a posição do mapa */
-  
-    
+    transform: translateX(-100px) translateY(-20px);
+    /* Ajuste a posição do mapa */
+
+
+}
+
+
+.logo-e-redes {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.redes-sociais {
+    margin-top: 120px;
+    /* Espaçamento entre o logo e as redes sociais */
+    margin-left: -200px;
+}
+
+.redes-sociais a {
+    margin: 0 5px;
+}
+
+.redes-sociais img {
+    width: 30px;
+    height: 30px;
 }
