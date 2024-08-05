@@ -22,6 +22,7 @@ header {
         justify-content: center;
         align-items: center;
         gap: 100px;
+        background-color: rgb(0, 0, 83);
     }
 
 
@@ -48,11 +49,11 @@ header {
 }
 
 .hero {
-    background-image: url('Imagens/Design\ sem\ nome.jpg'); /* Coloque o caminho para sua imagem aqui */
+    background-image: url('Imagens/FundoDoCabeçalho.jpg'); /* Coloque o caminho para sua imagem aqui */
     background-size: cover;
     background-position: center;
     height: 650px; /* Altura da tela inteira */
-    margin-top: 0px; /* Espaço para o cabeçalho fixo */
+    margin-top: 100px; /* Espaço para o cabeçalho fixo */
     position: relative;
     z-index: 1;
 }
@@ -61,7 +62,7 @@ header {
 .logo img {
     width: 120px;
     margin-top: 30px;
-   
+
 
 }
 
@@ -92,6 +93,7 @@ h1 {
 
     flex: 1;
     font-size: 18px;
+    font-weight: bold;
     text-align:end ;
     line-height: 1.6;
     color: #002060;
@@ -110,4 +112,51 @@ h1 {
     height: 400px;
     transform: translateX(100px) translateY(-0px); /* Ajuste a posição do caminhão */
     margin-right: 350px;
+}
+
+
+.locais-atuacao {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.locais-atuacao h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #002060;
+}
+
+.titulo {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    position: relative;
+    
+}
+
+
+.titulo01 {
+    flex: 1;
+    font-size: 40px;
+    line-height: 0.5;
+    font-weight: bold;
+    color: #002060;
+    margin-right: -30%;
+    z-index: 2;
+}
+
+.imagem-mapa {
+    position: relative;
+    z-index: 3;
+    margin-left: -81px; /* Ajuste o valor conforme necessário */
+}
+
+.imagem-mapa img {
+    margin-top: -20px;
+    height: 600px;
+    transform: translateX(-100px) translateY(-20px); /* Ajuste a posição do mapa */
+  
+    
 }
