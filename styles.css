@@ -40,7 +40,7 @@ header {
 
 
     .paragrafo {
-        font-size: 40px;
+        font-size: 20px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
     }
 
@@ -64,7 +64,7 @@ header {
 
 h1 {
     text-align: center;
-    font-size: 60px;
+    font-size: 20px;
     color: rgb(58, 146, 255);
 }
 
