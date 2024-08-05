@@ -34,16 +34,14 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 160px;
-    margin-right: 150px;
-    margin-top: 40px;
+    gap: 30px;
+    margin-right: 500px;
+    margin-left: 250px;
+    margin-top: 50px;
 
 
     .paragrafo {
         font-size: 18px;
-        border-radius: 10px;
-    border: 2px solid #0d1d82;
-    box-shadow: 0 0 10px #15006a, 0 0 20px #141a87;
         width: 130px;
         height: 50px;
         display: flex;
@@ -73,6 +71,10 @@ header {
     width: 120px;
     margin-top: 30px;
 
+}
+
+.logo{
+    margin-right: 10%;
 }
 
 
@@ -130,52 +132,39 @@ h1 {
 
 
 .locais-atuacao {
-    padding: 50px 20px;
     text-align: center;
-}
-
-.locais-atuacao h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    color: #002060;
-}
-
-.titulo {
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px;
-    position: relative;
-
-}
-
-
-.titulo01 {
-    flex: 1;
-    font-size: 40px;
-    line-height: 0.5;
-    font-weight: bold;
-    color: #002060;
-    margin-right: -30%;
-    z-index: 2;
+    padding: 50px 20px;
 }
 
 .imagem-mapa {
     position: relative;
-    z-index: 3;
-    margin-left: -81px;
-    /* Ajuste o valor conforme necessário */
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.imagem-mapa h2 {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    position: absolute;
+    top: 20px;
+    left: 20%;
+    margin-top: 40px;
+    transform: translateX(-50%);
+    color: #002060;
+    font-size: 2.5em;
+    font-weight: bold;
 }
 
 .imagem-mapa img {
-    margin-top: -20px;
-    height: 600px;
-    transform: translateX(-100px) translateY(-20px);
-    /* Ajuste a posição do mapa */
-
+    max-width: 40%;
+    height: auto;
+    margin-top: 150px;
 
 }
+
 
 
 .logo-e-redes {
@@ -186,7 +175,7 @@ h1 {
 .redes-sociais {
     margin-top: 120px;
     /* Espaçamento entre o logo e as redes sociais */
-    margin-left: -200px;
+    margin-left: -350px;
 }
 
 .redes-sociais a {
