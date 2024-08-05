@@ -110,7 +110,7 @@ h1 {
     text-align: end;
     line-height: 1.6;
     color: #002060;
-    margin-right: 0px;
+    margin-right: 10px;
     margin-left: 20%;
     z-index: 2;
 }
@@ -124,7 +124,7 @@ h1 {
 
 .imagem-container img {
     height: 400px;
-    transform: translateX(100px) translateY(-0px);
+    transform: translateX(80px) translateY(-0px);
     /* Ajuste a posição do caminhão */
     margin-right: 300px;
     
@@ -165,6 +165,66 @@ h1 {
 
 }
 
+.locais-e-servicos {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 20px;
+}
+
+
+.locais-atuacao .imagem-mapa {
+    position: relative;
+    text-align: center;
+}
+
+.servicos-oferecidos h2 {
+    flex: 1;
+    text-align: end;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+
+    font-size: 40px;
+    color: #002060;
+    font-weight: bold;
+
+    margin-top: -35%;
+    margin-right: 15%;
+}
+
+.servicos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 50%;
+    margin-right: 10%;
+
+
+}
+
+.servico-item {
+
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    border-radius: 15px;
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #002060;
+   
+    column-width: 4px;
+}
 
 
 .logo-e-redes {
@@ -186,3 +246,4 @@ h1 {
     width: 30px;
     height: 30px;
 }
+
