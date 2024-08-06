@@ -7,9 +7,9 @@ body {
 
 header {
     background-color: transparent;
-    padding: 20px 0;
     text-align: center;
     margin-top: -70px;
+
 
     position: fixed;
     top: 0;
@@ -23,7 +23,7 @@ header {
         align-items: center;
         gap: 100px;
         background: url('path-to-texture.png'), linear-gradient(45deg, rgb(0, 36, 94), #4a90e2);
-
+        height: 150px;
 
 
 }
@@ -36,7 +36,7 @@ header {
     gap: 30px;
     margin-right: 500px;
     margin-left: 250px;
-    margin-top: 50px;
+    margin-top: 60px;
 
 
     .paragrafo {
@@ -59,7 +59,7 @@ header {
     background-position: center;
     height: 650px;
     /* Altura da tela inteira */
-    margin-top: 100px;
+    margin-top: 80px;
     /* Espaço para o cabeçalho fixo */
     position: relative;
     z-index: 1;
@@ -67,8 +67,8 @@ header {
 
 
 .logo img {
-    width: 120px;
-    margin-top: 30px;
+    width: 140px;
+    margin-top: 70px;
 
 }
 
@@ -134,8 +134,10 @@ h1 {
 /*Imagem e título do LOCAIS DE ATUAÇÃO*/
 .locais-atuacao {
     text-align: center;
+    margin-top: 100px;
     padding: 50px 20px;
     background: url('path-to-texture.png'), linear-gradient(45deg, rgb(0, 36, 94), #4a90e2);
+    height: 700px;
 }
 
 .imagem-mapa {
@@ -266,9 +268,12 @@ h1 {
 }
 
 .imagem6 {
-    width: 100px;
-    margin-top: -20px
+    width: 120px;
+    margin-top: -25px;
+
 }
+
+
 
 
 /*Redes Sociais*/
@@ -278,16 +283,120 @@ h1 {
 }
 
 .redes-sociais {
-    margin-top: 120px;   /* Espaçamento entre o logo e as redes sociais */
-    margin-left: -350px;
+    margin-top: 70px;   /* Espaçamento entre o logo e as redes sociais */
+    margin-left: -250px;
 }
 
 .redes-sociais a {
     margin: 0 5px;
 }
 
-.redes-sociais img {
+.instagram{
     width: 30px;
     height: 30px;
 }
 
+.facebook  {
+    width: 25px;
+    height: 20px;
+}
+
+
+.descricao-titulo-p{
+    display: flex;
+    justify-content: center ;
+    margin-top: 10%;
+    margin-left: 5%;
+    background-color: rgb(255, 255, 255);
+   
+    
+    text-align: center;
+    border-radius: 10px;
+    width: 650px;
+    height: 500px;
+    left: 100px;
+}
+
+
+
+
+
+.acompanhe {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.descricao-rede {
+    flex: 1;
+    padding: 20px;
+    color: #002060;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    overflow: hidden;
+}
+
+.carousel {
+    position: relative;
+    width: 650px;  
+    height: 500px;
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.carousel-item img {
+    width: 550px;
+    height: 500px;
+    border-radius: 10px;
+    
+    
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 10%;
+    user-select: none;
+}
+
+.carousel-control-prev {
+    left: -50px;
+}
+
+.carousel-control-next {
+    right: 50px;
+}
+
+
+
+
+.footer{
+    margin-top: 20%;
+    background-color: #002060;
+    height: 500px;
+}
