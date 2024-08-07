@@ -1,9 +1,21 @@
+
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
 
 
 }
+
+a {
+    text-decoration: none; /* Remove a linha embaixo */
+    color: white; /* Define a cor do texto como branco */
+}
+
+a:visited {
+    color: white; /* Mantém a cor branca mesmo após a visita */
+}
+
 
 header {
     background-color: transparent;
