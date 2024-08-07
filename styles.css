@@ -94,8 +94,9 @@ header {
 h1 {
     text-align: center;
     font-size: 35px;
-    color: rgb(58, 146, 255);
+    color: rgb(0, 39, 88);
     margin-top: 200px;
+    margin-left: -20px;
 }
 
 
@@ -112,7 +113,7 @@ h1 {
     background: url('Imagens/FORMAS.webp') no-repeat center center;
     background-size: contain;
     height: 500px;
-    margin-top: 150px;
+    margin-top: 1px;
 }
 
 .texto {
@@ -428,8 +429,51 @@ h1 {
 
 
 
-.footer{
-    margin-top: 20%;
-    background-color: #002060;
-    height: 500px;
+/* carousel dos principais clientes*/
+
+
+
+.clientes {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.carousel-container {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-clients {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+}
+
+.carousel-clients img {
+    width: 200px;
+    height: 200px;
+    margin: 0 20px;
+    
+}
+
+.prev, .next {
+
+    margin-top: 25px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: rgb(0, 6, 121);
+    border: none;
+    cursor: pointer;
+    font-size: 50px;
+    z-index: 100;
+}
+
+.prev {
+    left: -20px;
+}
+
+.next {
+    right: 20px;
 }
