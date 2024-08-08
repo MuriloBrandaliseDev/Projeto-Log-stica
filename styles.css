@@ -1,5 +1,3 @@
-
-
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -7,14 +5,41 @@ body {
 
 }
 
-a {
-    text-decoration: none; /* Remove a linha embaixo */
-    color: white; /* Define a cor do texto como branco */
+.a1 {
+
+    text-decoration: none;
+    /* Remove o sublinhado */
+    color: white;
+    /* Mantém a cor branca dos textos */
+    text-shadow: 2px 2px 4px #000000;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
 }
 
-a:visited {
-    color: white; /* Mantém a cor branca mesmo após a visita */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }
+
+
+
+
+.a1:hover {
+    color: rgb(5, 147, 228);
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: scale(1.2);
+
+}
+
+.a1:active {
+
+    transform: translateY(-5px) scale(1.1);
+    /* Mantém a subida e aumenta em 10% */
+    text-decoration: none;
+    /* Remove o sublinhado */
+}
+
 
 
 header {
@@ -26,18 +51,28 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; /* Certifica-se que o cabeçalho fique acima do carousel */
+    z-index: 1000;
+    /* Certifica-se que o cabeçalho fique acima do carousel */
 
 }
-    .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 100px;
-        background: url('path-to-texture.png'), linear-gradient(45deg, rgb(0, 36, 94), #4a90e2);
-        height: 150px;
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    background: url('path-to-texture.png'), linear-gradient(45deg, rgb(0, 36, 94), #4a90e2);
+    height: 150px;
 
+    background: linear-gradient(270deg, #a26606, #ffd700, #03268e, #008cff);
+    background-size: 800% 800%;
+    animation: gradientAnimation 8s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .texts {
@@ -57,7 +92,7 @@ header {
         height: 50px;
         display: flex;
         justify-content: center;
-        align-items: center;        
+        align-items: center;
         font-weight: bold;
 
     }
@@ -67,15 +102,18 @@ header {
 .hero {
     position: relative;
     width: 100%;
-    height: 550px; /* altura total da tela */
+    height: 550px;
+    /* altura total da tela */
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000; /* cor de fundo caso o vídeo não carregue */
+    background-color: #000;
+    /* cor de fundo caso o vídeo não carregue */
 }
 
 .video-placeholder {
-    width: 100%; /* Ajuste a largura conforme necessário */
+    width: 100%;
+    /* Ajuste a largura conforme necessário */
     height: auto;
     display: flex;
     justify-content: center;
@@ -85,7 +123,7 @@ header {
 .video-top {
     width: 100%;
     height: auto;
-    
+
 }
 
 
@@ -94,12 +132,67 @@ header {
 .logo img {
     width: 140px;
     margin-top: 70px;
-
+    opacity: 0;
+    animation: fadeIn 2s forwards;
 }
 
-.logo{
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+
+.logo {
     margin-right: 10%;
+
 }
+
+
+
+
+/*Redes Sociais*/
+.logo-e-redes {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.redes-sociais {
+    margin-top: 70px;
+    /* Espaçamento entre o logo e as redes sociais */
+    margin-left: -250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.redes-sociais a {
+    margin: 0 5px;
+}
+
+.instagram {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.8s ease-in-out;
+}
+
+.instagram:hover{
+    transform: rotate(360deg) scale(1.2);
+}
+
+
+
+.facebook {
+    width: 25px;
+    height: 20px;
+    transition: transform 0.8s ease-in-out;
+}
+
+.facebook:hover {
+    transform: rotate(360deg) scale(1.2);
+}
+
 
 
 
@@ -144,15 +237,17 @@ h1 {
 .imagem-container {
     position: relative;
     z-index: 3;
-    margin-left: -120px;  /* Ajuste o valor conforme necessário */
+    margin-left: -120px;
+    /* Ajuste o valor conforme necessário */
 }
 
 .imagem-container img {
     height: 460px;
     border-radius: 180px;
-    transform: translateX(80px) translateY(-0px); /* Ajuste a posição do caminhão */
+    transform: translateX(80px) translateY(-0px);
+    /* Ajuste a posição do caminhão */
     margin-right: 300px;
-    
+
 }
 
 
@@ -261,7 +356,7 @@ h1 {
     font-size: 1.2em;
     color: #ffffff;
     background: url('path-to-texture.png'), linear-gradient(45deg, rgb(255, 255, 255), #0069d1);
-   
+
     column-width: 4px;
 }
 
@@ -270,17 +365,17 @@ h1 {
 
 
 /*Imagem Icones*/
-.imagem1{
+.imagem1 {
     width: 110px;
     margin-top: -15px;
 
 }
 
-.imagem2{
+.imagem2 {
     width: 65px;
 }
 
-.imagem3{
+.imagem3 {
     width: 100px;
     margin-top: -20px
 }
@@ -304,40 +399,16 @@ h1 {
 
 
 
-/*Redes Sociais*/
-.logo-e-redes {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.redes-sociais {
-    margin-top: 70px;   /* Espaçamento entre o logo e as redes sociais */
-    margin-left: -250px;
-}
-
-.redes-sociais a {
-    margin: 0 5px;
-}
-
-.instagram{
-    width: 30px;
-    height: 30px;
-}
-
-.facebook  {
-    width: 25px;
-    height: 20px;
-}
 
 
-.descricao-titulo-p{
+.descricao-titulo-p {
     display: flex;
-    justify-content: center ;
+    justify-content: center;
     margin-top: 10%;
     margin-left: 5%;
     background-color: rgb(255, 255, 255);
-   
-    
+
+
     text-align: center;
     border-radius: 10px;
     width: 650px;
@@ -375,7 +446,7 @@ h1 {
 
 .carousel {
     position: relative;
-    width: 650px;  
+    width: 650px;
     height: 500px;
 }
 
@@ -394,8 +465,8 @@ h1 {
     width: 550px;
     height: 500px;
     border-radius: 10px;
-    
-    
+
+
 }
 
 .carousel-control-prev,
@@ -467,10 +538,11 @@ h1 {
     width: 200px;
     height: 200px;
     margin: 0 20px;
-    
+
 }
 
-.prev, .next {
+.prev,
+.next {
 
     margin-top: 25px;
     transform: translateY(-50%);
