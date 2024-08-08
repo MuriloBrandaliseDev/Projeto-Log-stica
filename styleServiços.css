@@ -187,3 +187,190 @@ a {
 }
 
 /*------------------------*/
+
+
+
+/* Començando o corpo do projeto.*/
+.servicos-section {
+    padding: 50px 20px;
+    background: linear-gradient(120deg, #eaeaea, #fff);
+    text-align: center;
+}
+
+.servicos-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    margin-top: 10% ;
+    color: #00407c;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.servicos-section h2::after {
+    content: '';
+    width: 100px;
+    height: 4px;
+    background-color: #4b79a1;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.servicos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.servico-card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.servico-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.servico-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 150%;
+    height: 100%;
+    background: linear-gradient(120deg ,transparent,   rgba(18, 58, 90, 0.2));
+    transform: skewX(-15deg);
+    transition: left 0.5s ease;
+    z-index: 1;
+}
+
+.servico-card:hover::before {
+    left: 100%;
+}
+
+.servico-icon img {
+    width: 380px;
+    height: 300px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    border-radius: 10px;
+}
+
+.servico-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #0883e0;
+    z-index: 2;
+    position: relative;
+    font-weight: bold;
+}
+
+.servico-card p {
+    font-size: 1em;
+    color: #000000;
+    z-index: 2;
+    position: relative;
+    line-height: 1.3;
+}
+
+
+/*-----------------------------------------------*/
+
+
+/* Entre em contato */
+
+.contato {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+}
+
+.contato h2 {
+    color: #002060;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.cta-cotacao {
+    margin: 20px 0;
+}
+
+.botao-cotacao {
+    background-color: #d32f2f;
+    color: white;
+    font-size: 1.2em;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.botao-cotacao:hover {
+    background-color: #b71c1c;
+}
+
+.opcoes-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contato-item {
+    margin: 0 15px;
+    text-align: center;
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #002060;
+    transition: transform 0.3s ease;
+}
+
+.contato-item img {
+    width: 50px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.contato-item:hover {
+    transform: scale(1.1);
+}
+
+.contato-item:hover img {
+    transform: scale(1.3);
+}
+
+.email {
+    background-color: #ff7043;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.whatsapp {
+    background-color: #25d366;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.instagram-servicos {
+    background-color: #e4405f;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+
+
+
+/*-----------------------------------------------*/

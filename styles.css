@@ -175,7 +175,16 @@ header {
     width: 30px;
     height: 30px;
     transition: transform 0.8s ease-in-out;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
 }
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
 
 .instagram:hover{
     transform: rotate(360deg) scale(1.2);
@@ -187,7 +196,16 @@ header {
     width: 25px;
     height: 20px;
     transition: transform 0.8s ease-in-out;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
 }
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
 
 .facebook:hover {
     transform: rotate(360deg) scale(1.2);
@@ -512,7 +530,7 @@ h1 {
 
 
 
-/* carousel dos principais clientes*/
+/* carousel dos principais clientes
 
 
 
@@ -561,3 +579,4 @@ h1 {
 .next {
     right: 20px;
 }
+*/
