@@ -364,13 +364,28 @@ a {
 }
 
 .instagram-servicos {
-    background-color: #e4405f;
-    padding: 15px;
+    background-color: white;
     border-radius: 10px;
 }
 
+.instagram-servicos {
+    width: 10px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    background-size: 1000% 1000%;
+    animation: gradientAnimation 10s ease infinite;
+    border-radius: 10px;
+    margin-top: -10px;
+}
 
-
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
 
 
 /*-----------------------------------------------*/
